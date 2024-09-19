@@ -1,0 +1,47 @@
+# Complete Directory Structure
+analytics-dashboard
+  pom.xml
+  src
+    main
+      java
+        com
+          example
+│   │   │           └── analyticsdashboard/
+│   │   │               ├── AnalyticsDashboardApplication.java
+│   │   │               ├── config/
+│   │   │               │   ├── DataSourceConfig.java
+│   │   │               │   └── WebSocketConfig.java
+│   │   │               ├── controller/
+│   │   │               │   ├── AnalyticsController.java
+│   │   │               │   └── WebSocketEventController.java
+│   │   │               ├── service/
+│   │   │               │   ├── analytics/
+│   │   │               │   │   ├── EventAnalyticsService.java
+│   │   │               │   │   └── UserActivityAnalyticsService.java
+│   │   │               │   └── websocket/
+│   │   │               │       └── WebSocketService.java
+│   │   │               ├── model/
+│   │   │               │   ├── Event.java
+│   │   │               │   └── UserActivityEvent.java
+│   │   │               ├── repository/
+│   │   │               │   ├── EventRepository.java
+│   │   │               │   └── UserActivityRepository.java
+│   │   │               ├── dto/
+│   │   │               │   ├── EventDTO.java
+│   │   │               │   └── UserActivityDTO.java
+│   │   │               └── websocket/
+│   │   │                   ├── EventWebSocketHandler.java
+│   │   │                   └── WebSocketEventListener.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │           └── index.html
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── analyticsdashboard/
+│                       ├── service/
+│                       │   ├── EventAnalyticsServiceTest.java
+│                       │   └── WebSocketServiceTest.java
+│                       └── AnalyticsDashboardApplicationTests.java
